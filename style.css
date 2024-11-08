@@ -1,0 +1,90 @@
+.permanent-marker-regular {
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #020202;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 20px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+canvas {
+    background-color: #000;
+    border: 2px solid #fff;
+}
+
+#blockCanvas {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 20px;
+    top: 70px;
+}
+
+.skorTitle {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 30px;
+    top: 250px;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 30px;
+}
+
+#restartButton {
+    position: absolute;
+    top: 6%;
+    transform: translateY(300px);
+    right: 40px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #555;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#restartButton:hover {
+    background-color: #777;
+}
+
+.tetriz-title {
+    font-family: 'Permanent Marker', cursive;
+    display: flex;
+    position: absolute;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    margin: 0;
+    padding: 20px;
+    top: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.tetriz-title :hover {
+    transform: scale(1.6);
+    color: #ff6347;
+}
